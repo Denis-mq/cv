@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <h1> Contact Me</h1>
+    <hr size="3" noshade>
+    <h3>Personal info</h3>
+    <table>
+        <tr>
+            <td><strong> Email: </strong></td>
+            <td><em>andresm.am20@gmail.com</em></td>
+        </tr>
+        <tr>
+            <td><strong> Phone: </strong></td>
+            <td>+39 3890154415</td>
+        </tr>
+        <tr>
+            <td><strong> Instagram: </strong></td>
+            <td><a href="https://www.instagram.com/d_andres_mq/"> Andres Maigualema</a></td>
+        </tr>
+    </table>
+
+    <hr size="3" noshade>
+    <form action="mailto:andresm.am20@gmail.com" method="post" enctype="text/plain"> <!--email y enctype ayuda a que no salgan simbolos raro al mensaje-->
+    <!--otra forma es usando action="mailto:andresm.am20@gmail.com ; o action="index.html" lo cual regresa a la pagina principal-->
+        <label>Your Name:</label>
+        <input type="text" name="yourName" value=""><br> <!--se debe poner name para conocer saber a que pertence cada texto-->
+        <label>Your Email:</label>
+        <input type="email" name="yourEmail" value=""><br>
+        <label>Your Message:</label><br>
+        <textarea name="yourMessage" cols="30" rows="10"></textarea><br> <!--el mensaje se almacena en la variable name, sin eso queda en blanco-->
+        <input type="submit" name=""><br>
+    </form>
+    
+</body>
+</html>
